@@ -19,8 +19,11 @@ const app = Vue.createApp({
     toggleShowBooks(){
         this.showBooks = !this.showBooks
     },
-    handleEvent(e){
+    handleEvent(e, data){
         console.log(e, e.type)
+        if (data) {
+            console.log(data)
+        }
     }
   },
 });

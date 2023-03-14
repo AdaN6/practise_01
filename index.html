@@ -48,7 +48,9 @@
 
         <br>
         <!-- mouse events -->
-        <div class="box" @mouseover="handleEvent">mouseover</div>
+        <!-- if wanna pass custom parameter and want even obj at the same time, we need to explicit mention $event in the argument too -->
+        <div class="box" @mouseover="handleEvent($event, 5)">mouseover</div>
+        <!-- when you dont past your own argument, first argument will automatically be the e obj -->
         <div class="box" @mouseleave="handleEvent">mouseleave</div>
         <div class="box" @dblclick="handleEvent">double click</div>
         <div class="box"></div>
