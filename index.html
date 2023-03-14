@@ -13,9 +13,9 @@
 
     <div id="app">
         <!-- <h2>I am the template now</h2> -->
+
         <div v-if="showBooks">
             <p>{{title}} - {{author}} - {{age}} </p>
-
         </div>
 
         <div>
@@ -25,6 +25,12 @@
                 <span v-else>Show Books</span>
             </button>
 
+        </div>
+
+        <!-- v-if remove from DOM completely when its false -->
+        <!-- v-show is just uses css like display: none. Profitable to use like dropdown when you need to show on and off very often as it will have less time consuming and less expensive in terms of performance-->
+        <div v-show="showBooks">
+            Currently showing books
         </div>
 
         <button v-on:click="age++">Increase age</button>
