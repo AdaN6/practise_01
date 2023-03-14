@@ -53,7 +53,7 @@
         <!-- when you dont past your own argument, first argument will automatically be the e obj -->
         <div class="box" @mouseleave="handleEvent">mouseleave</div>
         <div class="box" @dblclick="handleEvent">double click</div>
-        <div class="box"></div>
+        <div class="box" @mousemove="handleMousemove">position: {{x}} {{y}} </div>
     </div>
 
     <script src="app.js"></script>
