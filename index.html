@@ -13,7 +13,17 @@
 
     <div id="app">
         <!-- <h2>I am the template now</h2> -->
-        <p>{{title}} - {{author}} - {{age}} </p>
+        <div v-if="showBooks">
+            <p>{{title}} - {{author}} - {{age}} </p>
+
+        </div>
+
+        <div>
+            <button @click="toggleShowBooks">
+                <span>Hide Books</span>
+            </button>
+
+        </div>
 
         <button v-on:click="age++">Increase age</button>
         <button v-on:click="age--">Decrease age</button>

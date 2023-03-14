@@ -1,21 +1,25 @@
 const app = Vue.createApp({
-    //data , functions
-    // template: '<h2> I am the template </h2>'
+  //data , functions
+  // template: '<h2> I am the template </h2>'
 
-    data() {
-        return {
-            title: 'The Final Empire',
-            author: 'Brandon Sanderson',
-            age: 45
-        }
+  data() {
+    return {
+      showBooks: true,
+      title: "The Final Empire",
+      author: "Brandon Sanderson",
+      age: 45,
+    };
+  },
+
+  methods: {
+    changeTitle(title) {
+      // this.title = 'Words of Randiance'
+      this.title = title;
     },
-
-    methods: {
-        changeTitle(title) {
-            // this.title = 'Words of Randiance'
-            this.title = title
-        }
+    toggleShowBooks(){
+        this.showBooks = false
     }
-})
+  },
+});
 
 app.mount('#app')
