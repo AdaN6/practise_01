@@ -11,8 +11,9 @@ const app = Vue.createApp({
     },
 
     methods: {
-        changeTitle() {
-            this.title = 'Words of Randiance'
+        changeTitle(title) {
+            // this.title = 'Words of Randiance'
+            this.title = title
         }
     }
 })
