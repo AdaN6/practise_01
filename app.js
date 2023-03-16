@@ -5,11 +5,15 @@ const app = Vue.createApp({
   data() {
     return {
       showBooks: true,
-      title: "The Final Empire",
-      author: "Brandon Sanderson",
-      age: 45,
+      // title: "The Final Empire", 
+      // author: "Brandon Sanderson",
+      books: [
+        {title: "The Final Empire", author: "Brandon Sanderson"}, 
+        {title: 'the way of kings', author:'brandon sanderson'},
+        {title: 'the final empire', author: 'brandon sanderson'},
+      ],
       x: 0,
-      y: 0
+      y: 0,
     };
   },
 
