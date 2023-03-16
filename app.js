@@ -40,6 +40,12 @@ const app = Vue.createApp({
         this.y = e.offsetY
     }
   },
+  // computed property depends on other data, when the data changes this computed property will update
+  computed: {
+    filteredBooks() {
+      return this.books.filter((book) => book.isFav)
+    }
+  }
 });
 
 app.mount('#app')
