@@ -9,9 +9,9 @@ const app = Vue.createApp({
       // title: "The Final Empire", 
       // author: "Brandon Sanderson",
       books: [
-        {title: "The Final Empire", author: "Brandon Sanderson"}, 
-        {title: 'the way of kings', author:'brandon sanderson'},
-        {title: 'the final empire', author: 'brandon sanderson'},
+        {title: "The Final Empire", author: "Brandon Sanderson", img:'assets/1.jpg'}, 
+        {title: 'the way of kings', author:'brandon sanderson', img:'assets/2.jpg'},
+        {title: 'the final empire', author: 'brandon sanderson', img:'assets/3.jpg'},
       ],
       x: 0,
       y: 0,
