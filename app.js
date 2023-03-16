@@ -5,6 +5,7 @@ const app = Vue.createApp({
   data() {
     return {
       showBooks: true,
+      url: 'https://adaneo6.com/',
       // title: "The Final Empire", 
       // author: "Brandon Sanderson",
       books: [
